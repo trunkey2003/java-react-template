@@ -1,13 +1,13 @@
-package com.example.javareacttemplate;
+package com.example.javareactjartemplate;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JavaReactTemplateApplication {
+public class JavaReactJarTemplateApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(JavaReactTemplateApplication.class, args);
+		SpringApplication.run(JavaReactJarTemplateApplication.class, args);
 	}
 
 }

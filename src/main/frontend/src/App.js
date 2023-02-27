@@ -1,7 +1,11 @@
+
+import { Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
+import CustomRoute from "./pages/CustomRoute";
 
-function App() {
+function HomePage() {
   return (
     <div className="App">
       <header className="App-header">
@@ -19,6 +23,18 @@ function App() {
         </a>
       </header>
     </div>
+  );
+}
+
+function App() {
+
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route exact path='/' element={<HomePage />}></Route>
+        <Route exact path='/custom/my-custom' element={<CustomRoute />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

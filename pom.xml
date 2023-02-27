@@ -10,10 +10,9 @@
 		<!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>java-react-template</artifactId>
+	<artifactId>java-react-jar-template</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
-	<name>java-react-template</name>
+	<name>java-react-jar-template</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
@@ -22,11 +21,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -85,7 +79,7 @@
 					<workingDirectory>src/main/frontend</workingDirectory>
 				</configuration>
 			</plugin>
-			<!-- copy our angular build artifacts to spring boot -->
+			<!-- copy our react build artifacts to spring boot -->
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<executions>
